@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ubicación</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* TITULOS */
+        h1 {
+            margin-top: 20px;
+        }
+
+        /* MAPA */
+        .mapa {
+            width: 50%;
+            height: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* INFO */
+        .info {
+            width: 50%;
+            margin: 20px auto 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .columna {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+            text-align: left;
+        }
+
+        .columna h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            .mapa,
+            .info {
+                width: 90%;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nuestra Ubicación</h1>
+    <p>Unidad Académica Tulcingo de Valle</p>
+
+    <!-- MAPA -->
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.5933791836455!2d-98.45207871768758!3d18.044064839021672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cf29f0b416a3cb%3A0x317bc639516bab8e!2sUnidad%20Academica%20Tulcingo%20de%20Valle!5e0!3m2!1ses-419!2smx!4v1769623664075!5m2!1ses-419!2smx"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <h2>Información Real</h2>
+
+    <!-- INFORMACIÓN -->
+    <div class="info">
+
+        <div class="columna">
+            <h3>Dirección</h3>
+            <p>Tulcingo de Valle, Puebla</p>
+
+            <h3>Horario</h3>
+            <p>Lunes a Viernes 8am - 4pm</p>
+        </div>
+
+        <div class="columna">
+            <h3>Contacto</h3>
+            <p>2750000000</p>
+
+            <h3>Servicios</h3>
+            <p>Biblioteca, Laboratorios, Carreras</p>
+        </div>
+
+    </div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/697bc68ddba1a41c36d9c57a/1jg5nv69i';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
